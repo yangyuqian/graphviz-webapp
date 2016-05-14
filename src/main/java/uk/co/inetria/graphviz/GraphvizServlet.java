@@ -41,7 +41,7 @@ public class GraphvizServlet extends HttpServlet {
 			
 		} else {
 			// otherwise use this URL
-			urlStr = "http://108.59.83.98:8080/svg";
+			urlStr = "http://192.168.33.11:10000/svg";
 		}
 		
 		log.info("Using url: " + urlStr);
