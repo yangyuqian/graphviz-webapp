@@ -13,7 +13,7 @@ RUN apt-get -y update && apt-get install -y \
 # Clone the graphviz-webapp github repo
 # Build the WAR file
 # Deploy the WAR file to /var/lib/jetty/
-RUN git clone https://github.com/omerio/graphviz-webapp /opt/graphviz-webapp \
+RUN git clone https://github.com/yangyuqian/graphviz-webapp /opt/graphviz-webapp \
 		&& cd /opt/graphviz-webapp \
 		&& mvn package \
 		&& cp /opt/graphviz-webapp/target/graphviz-webapp.war /var/lib/jetty/webapps/ROOT.war
